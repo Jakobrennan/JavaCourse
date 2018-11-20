@@ -1,0 +1,47 @@
+/**
+ * The following are the intermediate exercises from the java se book
+ */
+package Intermediate;
+
+/**
+ * @author Jakob Brennan
+ *
+ */
+public class Intermediate {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//blackjack
+		System.out.println(blackJack(18, 21));
+		System.out.println(blackJack(18, 29));
+		System.out.println(blackJack(87, 45));
+		System.out.println(blackJack(15, 7));
+	}
+	
+	public static int blackJack(int first, int second) {
+		if(first > 21 && second > 21) {
+			return 0;
+		} else if (first < 21 && second < 21) {
+			if(first > second) {
+				return first;
+			} else {
+				return second;
+			}
+		} else {
+			if(first > 21 ) {
+				return second;
+			} else {
+				return first;
+			}
+		}
+	}
+	
+	public static void line() {
+		System.out.println("-------------------------------");
+	}
+
+}

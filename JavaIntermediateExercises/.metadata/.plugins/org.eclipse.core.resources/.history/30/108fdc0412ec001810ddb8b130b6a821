@@ -1,0 +1,47 @@
+/**
+ * Below are all the Java SE exercises provided by the book. The single line comments are the titles of the challenges
+ */
+package mainPackage;
+
+/**
+ * @author Jakob Brennan
+ *
+ */
+public class ExerciseOne {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Hello World!
+		System.out.println("Hello World!");
+		
+		//Assignment
+		String HW = "Hello World!";
+		System.out.println(HW);
+		
+		//Parameters
+		ToConsole("Hello World! (again)");
+		
+		//Return Types
+		OutPut();
+		
+		//Parameters/Operators
+		Addition(3, 5);
+		Addition(10000, 876238);
+	}
+	
+	public static void ToConsole(String output) {
+		System.out.println(output);
+	}
+	
+	public static void OutPut() {
+		System.out.println("Hello World! for the 4th time");
+	}
+	
+	public static int Addition(int a, int b) {
+		return a + b;
+	}
+
+}
