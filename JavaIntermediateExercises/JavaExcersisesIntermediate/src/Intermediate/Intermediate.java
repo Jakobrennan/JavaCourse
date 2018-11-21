@@ -31,8 +31,14 @@ public class Intermediate {
 		line();
 		
 		//too hot
+		int param = (int) Math.ceil(Math.random() * 100);
+		System.out.println(tooHot(param));
 		
-		tooHot();
+		line();
+		
+		//people
+		People test1 = new People();
+		
 	}
 	
 	public static int blackJack(int first, int second) {
@@ -76,9 +82,11 @@ public class Intermediate {
 			return false;
 		}
 	}
+
 	
 	public static void line() {
 		System.out.println("-------------------------------");
 	}
 
 }
+

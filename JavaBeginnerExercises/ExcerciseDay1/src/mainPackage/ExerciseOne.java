@@ -50,6 +50,9 @@ public class ExerciseOne {
 		System.out.println(addition(0, 5));
 		System.out.println(addition(12, 0));
 		
+		addition(5, 6)
+		addition(5, 6, true)
+		
 		line();
 		
 		//Iteration
@@ -97,6 +100,8 @@ public class ExerciseOne {
 	public static void outPut() {
 		System.out.println("Hello World! for the 4th time");
 	}
+	
+	
 	
 	public static int addition(int firstInt, int secondInt) {
 		return firstInt + secondInt;
